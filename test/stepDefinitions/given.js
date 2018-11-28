@@ -1,19 +1,13 @@
 
 import { defineSupportCode } from 'cucumber';
-import yahooPage from '../pageobjects/yahoo-search.page';
-import loginPage from '../pageobjects/ta-login.page';
+import owmHomePage from '../pageobjects/owm-home.page';
 
 defineSupportCode(function({ Given }) {
 
-  // *** belongs to Yahoo serch feature
-  Given(/^I am on the search page$/, function() {
-    yahooPage.open();
-    browser.getTitle().should.equal('Yahoo Search - Web Search');
-  });
-
-  // *** belongs to ta-loging  feature
-  Given(/^I am on the phptravels page$/, function() {
-    loginPage.open();     // navigating to login page
+  // *** belongs to open-weather-map feature
+  Given(/^I am on the Open Weather Maps home page$/, function() {
+    owmHomePage.open();     // navigating to login page
+    browser.getTitle().should.contain("OpenWeatherMap");
   });
 
 });

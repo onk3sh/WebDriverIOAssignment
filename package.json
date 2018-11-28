@@ -41,12 +41,12 @@
     "node-excel-to-json": "0.0.3",
     "node-inspector": "^1.1.1",
     "underscore": "^1.8.3",
-    "wdio-allure-reporter": "^0.6.0",
+    "wdio-allure-reporter": "^0.6.3",
     "wdio-dot-reporter": "0.0.5",
     "wdio-json-reporter": "^0.1.1",
     "wdio-junit-reporter": "0.0.2",
-    "wdio-spec-reporter": "^0.1.2",
-    "webdriverio": "^4.8.0"
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.14.0"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
@@ -59,6 +59,7 @@
     "grunt-cli": "^0.1.13",
     "grunt-cucumberjs": "^0.8.7",
     "node-uuid": "^1.4.7",
+    "request": "^2.88.0",
     "selenium-standalone": "^6.8.0",
     "wdio-appium-service": "^0.2.3",
     "wdio-browserstack-service": "^0.1.4",
@@ -70,7 +71,14 @@
   },
   "babel": {
     "presets": [
-        ["env", { "targets": {"node": "current"}}]
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
       ]
+    ]
   }
 }

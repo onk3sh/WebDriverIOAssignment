@@ -6,9 +6,9 @@ module.exports = function(grunt) {
             tests: {
                 configFile: './test/config/suite.cucumber.conf.js'
             },
-            tests-mobile: {
-                configFile: './test/config/suite.appium.conf.js'
-            },
+            // tests-mobile: {
+            //     configFile: './test/config/suite.appium.conf.js'
+            // },
         },
     });
 
