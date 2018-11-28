@@ -49,3 +49,12 @@ npm install -g junit-viewer
 To generate and see the test reports, please execute the following command:
 ```
 npm run junit-report
+```
+
+## Cleanup
+There can be some stray references to the chromedriver that can accumalate over time and are visible in the task manager.
+Please execute the following command via an administrator command prompt. 
+Do match the name of the stary proccess before executing.
+```
+TASKKILL /IM 2.43-x64-chromedriver /F
+```
