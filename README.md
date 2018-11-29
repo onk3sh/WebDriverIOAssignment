@@ -1,12 +1,19 @@
 # WebDriverIOAssignment
 Cucumber - BDD assignment using WebDriver IO
 
+## Base framework for this assignment has been pulled from
+Boilerplate framework available here: https://github.com/amiya-pattnaik/webdriverIO-with-cucumberBDD
+
+## Requirement of Testing
+Site under test: https://openweathermaps.org
+
 ## Pre-requisite
 For Selenium standalone to install and execute successfully, please execute the following command:
 ```
 setx NODE_TLS_REJECT_UNAUTHORIZED 0
 ```
-This is required from selenium-standalone perspective.
+This is required from selenium-standalone package.
+The execution of launcing the selenium-standalone server is already handled using the scripts in package.json
 
 ## Installation
 Please execute the following code snippet before executing the tests
@@ -14,7 +21,14 @@ Please execute the following code snippet before executing the tests
 npm install
 ```
 This command should take care of all the depencies. 
-If not and you still encounter any error, please install 'yarn'
+If not and you still encounter any error, please install 'yarn' using the following command
+```
+npm install yarn -g
+```
+and run the following command:
+```
+yarn install
+```
 
 ## Test Execution
 All tests can be executed via the command
@@ -58,12 +72,3 @@ Do match the name of the stary proccess before executing.
 ```
 TASKKILL /IM 2.43-x64-chromedriver /F
 ```
-
-## Base framework for this assignment has been pulled from
-Boilerplate framework available here: https://github.com/amiya-pattnaik/webdriverIO-with-cucumberBDD
-
-## Requirement of Testing
-Site under test: Openweathermaps.org
-We need to test 
-- Launch site and validate all labels on the page
-- Launch site, enter an invalid city and validate result
