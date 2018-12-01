@@ -47,6 +47,9 @@ class HomePage extends Page {
     }
 
     getDefaultCityHeaderText(){
+        if(!this.defaultCityHeaderText.isVisible()){
+            this.defaultCityHeaderText.waitForVisible(3000);
+          }
         return this.defaultCityHeaderText.getText();
     }
 
